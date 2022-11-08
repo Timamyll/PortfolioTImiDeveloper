@@ -1,0 +1,96 @@
+.page__header {}
+
+.container {}
+
+.header__body {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.header__logo {}
+
+.logo__imgs {}
+
+.header__menu {}
+
+.header__menus {}
+
+.menu__nav {
+    display: flex;
+    gap: 36px;
+}
+
+.menu__link {}
+
+.header__item {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+
+.header__item:hover {
+    color: #36DFE7;
+}
+
+.header__item {
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.header__item:after {
+    display: block;
+    content: "";
+    background-color: #36DFE7;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.header__item:hover:after,
+.header__item:focus:after {
+    width: 100%;
+}
+
+
+/* .header__item:hover {
+    text-decoration: underline;
+} */
+
+.header__buttom {}
+
+.header__buttons {
+    font-family: 'Inter';
+    transition: all 0.9s;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    padding: 12px 34px 15px 34px;
+    background: linear-gradient(0deg, #DA4F6E, #DA4F6E), linear-gradient(0deg, #EFCB0A, #EFCB0A), linear-gradient(0deg, rgba(212, 132, 68, 0.5), rgba(212, 132, 68, 0.5)), rgba(232, 84, 117, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header__buttons:hover {
+    background: #00121C;
+    border: 1px solid #DA4F6E;
+}
