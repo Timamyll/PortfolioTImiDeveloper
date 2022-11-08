@@ -1,5 +1,6 @@
 @import url(./modules/header.css);
 @import url(./modules/hamberger.css);
+@import url(./modules/title.css);
 * {
     padding: 0;
     margin: 0;
