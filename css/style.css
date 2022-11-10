@@ -105,6 +105,10 @@ html {
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
+    -webkit-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -khtml-border-radius: 50% !important;
 }
 
 .globe-worldmap-front,
