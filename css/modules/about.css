@@ -1,0 +1,140 @@
+.page__about {}
+
+.container {}
+
+.about__body {
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 500px;
+    align-items: center;
+    padding-top: 274px;
+}
+
+.about__slider {
+    width: 100%;
+}
+
+.about__slider-slider {
+    width: 80%;
+}
+
+.about__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 624px;
+    margin-bottom: 20px;
+}
+
+.about__link {}
+
+.about__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 121.52%;
+    /* or 29px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.23em;
+    color: #FFFFFF;
+    max-width: 517px;
+}
+
+#slick-slide-control00 {
+    background: rgba(87, 61, 255, 0.404);
+    width: 20px;
+    height: 18px;
+    border-radius: 100%;
+    font-size: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#slick-slide-control00:hover {
+    background: #d3e915;
+}
+
+#slick-slide-control01 {
+    background: rgba(87, 61, 255, 0.404);
+    width: 20px;
+    height: 18px;
+    border-radius: 100%;
+    font-size: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#slick-slide-control01:hover {
+    background: #d3e915;
+}
+
+#slick-slide-control02 {
+    background: rgba(87, 61, 255, 0.404);
+    width: 20px;
+    height: 18px;
+    border-radius: 100%;
+    font-size: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#slick-slide-control02:hover {
+    background: #d3e915;
+}
+
+#slick-slide-control03 {
+    background: rgba(87, 61, 255, 0.404);
+    width: 20px;
+    height: 18px;
+    border-radius: 100%;
+    font-size: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#slick-slide-control03:hover {
+    background: #d3e915;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+@media (max-width: 1034px) {
+    .about__body {
+        grid-template-columns: 100%;
+    }
+    .about__text {
+        max-width: 100%;
+    }
+    .about__slider {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 890px) {
+    .about__text {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 591px) {
+    .about__text {
+        font-size: 14px;
+        /* margin-top: 69px; */
+    }
+}
+
+@media (max-width: 400px) {
+    .about__img {
+        height: 100%;
+    }
+    .about__body {
+        grid-auto-rows: 334px;
+        padding-top: 0;
+    }
+}
