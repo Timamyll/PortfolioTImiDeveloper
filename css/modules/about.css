@@ -46,6 +46,7 @@
 }
 
 #slick-slide-control00 {
+    border: none;
     background: rgba(87, 61, 255, 0.404);
     width: 20px;
     height: 18px;
@@ -59,6 +60,7 @@
 }
 
 #slick-slide-control01 {
+    border: none;
     background: rgba(87, 61, 255, 0.404);
     width: 20px;
     height: 18px;
@@ -72,6 +74,7 @@
 }
 
 #slick-slide-control02 {
+    border: none;
     background: rgba(87, 61, 255, 0.404);
     width: 20px;
     height: 18px;
@@ -85,6 +88,7 @@
 }
 
 #slick-slide-control03 {
+    border: none;
     background: rgba(87, 61, 255, 0.404);
     width: 20px;
     height: 18px;
@@ -122,7 +126,7 @@
     }
 }
 
-@media (max-width: 591px) {
+@media (max-width: 500px) {
     .about__text {
         font-size: 14px;
         /* margin-top: 69px; */

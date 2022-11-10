@@ -1,0 +1,171 @@
+.page__contact {}
+
+.container {}
+
+.contact__body {
+    padding-top: 204px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    background: linear-gradient(180deg, rgb(46 182 125) 54.48%, rgb(39 135 245) 63.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(0 0 0 / 0%);
+    margin-bottom: 130px;
+}
+
+.contact__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact__tel {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 121.52%;
+    /* or 29px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.23em;
+    color: #FFFFFF;
+}
+
+.contact__mail {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 121.52%;
+    /* or 29px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.23em;
+    color: #FFFFFF;
+}
+
+.contact__telegramm {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 121.52%;
+    /* or 29px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.23em;
+    color: #FFFFFF;
+}
+
+.contact__tel,
+.contact__mail,
+.contact__telegramm {
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact__tel:after {
+    display: block;
+    content: "";
+    background-color: #36DFE7;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.contact__tel:hover:after,
+.contact__tel:focus:after {
+    width: 100%;
+}
+
+.contact__mail:after {
+    display: block;
+    content: "";
+    background-color: #36DFE7;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.contact__mail:hover:after,
+.contact__mail:focus:after {
+    width: 100%;
+}
+
+.contact__telegramm:after {
+    display: block;
+    content: "";
+    background-color: #36DFE7;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.contact__telegramm:hover:after,
+.contact__telegramm:focus:after {
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+    .contact__body {
+        padding-top: 50px;
+    }
+    .contact__tel,
+    .contact__mail,
+    .contact__telegramm {
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+    }
+    .contact__title {
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact__tel,
+    .contact__mail,
+    .contact__telegramm {
+        font-size: 12px;
+    }
+}
