@@ -15,6 +15,7 @@
 
 .header__menu {
     /* padding-left: 121px; */
+    z-index: 1000;
 }
 
 .header__menus {}
@@ -68,6 +69,10 @@
 .header__item:hover:after,
 .header__item:focus:after {
     width: 100%;
+}
+
+.liquid-button {
+    z-index: 1000;
 }
 
 

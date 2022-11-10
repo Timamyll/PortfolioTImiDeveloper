@@ -132,3 +132,9 @@
     left: 0;
     z-index: 2;
 }
+
+@media (max-width: 840px) {
+    #pretty-bg {
+        display: none;
+    }
+}
