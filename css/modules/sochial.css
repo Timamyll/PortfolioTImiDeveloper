@@ -1,0 +1,28 @@
+.page__sochial {}
+
+.container {}
+
+.sochial__body {
+    display: flex;
+    gap: 41px;
+    justify-content: center;
+    padding-top: 166px;
+    flex-wrap: wrap;
+}
+
+.sochial__img {}
+
+.sochial__imgs {
+    width: 75px;
+    height: 71px;
+}
+
+@media (max-width: 520px) {
+    .sochial__imgs {
+        width: 34px;
+    }
+    .sochial__body {
+        gap: 24px;
+        padding-top: 50px;
+    }
+}

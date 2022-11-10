@@ -1,0 +1,11 @@
+.footer {
+    height: 518px;
+    background: no-repeat center / cover url(../../images/footer/bg.png);
+    margin-top: 129px;
+}
+
+@media (max-width: 400px) {
+    .footer {
+        margin-top: 50px;
+    }
+}
