@@ -1,0 +1,89 @@
+.page__project {}
+
+.container {}
+
+.project__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 187px;
+}
+
+.project__title {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    /* identical to box height */
+    background: linear-gradient(180deg, #2EB67D 54.48%, #2787F5 63.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.project__text {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 993px;
+}
+
+.project__title {
+    color: #fff;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin-bottom: 141px;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange
+    }
+}
+
+@media (max-width: 595px) {
+    .project__text {
+        font-size: 20px;
+    }
+    .project__title {
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 50px;
+    }
+    .project__body {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 595px) {
+    .project__text {
+        font-size: 12px;
+    }
+}

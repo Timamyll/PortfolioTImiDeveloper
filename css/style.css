@@ -1,140 +1,169 @@
-@import url(./modules/main.css);
-@import url(./modules/header.css);
-@import url(./modules/hamberger.css);
-@import url(./modules/title.css);
-@import url(./modules/about.css);
-@import url(./modules/contact.css);
-@import url(./modules/sochial.css);
-@import url(./modules/footer.css);
-.liquid-button {
-    /* margin: auto; */
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.path {
-    cursor: pointer
-}
-
-.globe-container,
-.globe {
-    width: 200px;
-    height: 200px;
-}
-
-.globe-container {
-    position: relative;
-    display: inline-block;
-    margin: 30px;
-    transform: scale(1.1);
-}
-
-.globe {
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-}
-
-.globe-worldmap,
-.globe-worldmap-front,
-.globe-worldmap-back,
-.globe-sphere,
-.globe-outer-shadow,
-.globe-inner-shadow {
-    position: absolute;
-    display: block;
-    margin: 0;
-}
-
-.globe-sphere,
-.globe-outer-shadow,
-.globe-inner-shadow {
-    left: 0;
-    top: 0;
-    width: 200px;
-    height: 200px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-}
-
-.globe-worldmap {
-    left: 0;
-    top: 0;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    /* -webkit-border-radius: 50% !important;
+    @import url(./modules/main.css);
+    @import url(./modules/header.css);
+    @import url(./modules/hamberger.css);
+    @import url(./modules/title.css);
+    @import url(./modules/about.css);
+    @import url(./modules/contact.css);
+    @import url(./modules/sochial.css);
+    @import url(./modules/footer.css);
+    .liquid-button {
+        /* margin: auto; */
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .path {
+        cursor: pointer
+    }
+    
+    .globe-container,
+    .globe {
+        width: 200px;
+        height: 101px;
+    }
+    
+    .globe-container {
+        position: relative;
+        display: inline-block;
+        margin: 30px;
+        transform: scale(1.1);
+    }
+    
+    .globe {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+    }
+    
+    .globe-worldmap,
+    .globe-worldmap-front,
+    .globe-worldmap-back,
+    .globe-sphere,
+    .globe-outer-shadow,
+    .globe-inner-shadow {
+        position: absolute;
+        display: block;
+        margin: 0;
+    }
+    
+    .globe-sphere,
+    .globe-outer-shadow,
+    .globe-inner-shadow {
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 200px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+    
+    .globe-worldmap {
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        /* -webkit-border-radius: 50% !important;
     -o-border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     -khtml-border-radius: 50% !important; */
-}
-
-.globe-worldmap-front,
-.globe-worldmap-back {
-    left: 0;
-    top: 0;
-    width: 1000px;
-    height: 200px;
-    overflow: visible;
-    background-image: url(../images/worldmap-6.svg);
-    background-repeat: no-repeat;
-}
-
-.globe-outer-shadow {
-    left: 0;
-    top: 186px;
-    width: 200px;
-    height: 30px;
-    background-image: url(../images/outer_shadow.svg);
-}
-
-.globe-inner-shadow {
-    background-image: url(../images/inner_shadow.svg);
-}
-
-.globe-worldmap-front {
-    background-position: 0px 0px;
-    animation: textureSpinreverse 8s linear infinite;
-}
-
-.globe-worldmap-back {
-    background-position: 0px -220px;
-    animation: textureSpin 8s linear infinite;
-}
-
-@keyframes textureSpin {
-    from {
-        transform: translateX(0);
     }
-    to {
-        transform: translateX(-47.5%);
+    
+    .globe-worldmap-front,
+    .globe-worldmap-back {
+        left: 0;
+        top: 0;
+        width: 1000px;
+        height: 200px;
+        overflow: visible;
+        background-image: url(../images/worldmap-6.svg);
+        background-repeat: no-repeat;
     }
-}
-
-@keyframes textureSpinreverse {
-    from {
-        transform: translateX(-47.5%);
+    
+    .globe-outer-shadow {
+        left: 0;
+        top: 186px;
+        width: 200px;
+        height: 30px;
+        background-image: url(../images/outer_shadow.svg);
     }
-    to {
-        transform: translateX(0);
+    
+    .globe-inner-shadow {
+        background-image: url(../images/inner_shadow.svg);
     }
-}
-
-#pretty-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-@media (max-width: 840px) {
+    
+    .globe-worldmap-front {
+        background-position: 0px 0px;
+        animation: textureSpinreverse 8s linear infinite;
+    }
+    
+    .globe-worldmap-back {
+        background-position: 0px -220px;
+        animation: textureSpin 8s linear infinite;
+    }
+    
+    @keyframes textureSpin {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-47.5%);
+        }
+    }
+    
+    @keyframes textureSpinreverse {
+        from {
+            transform: translateX(-47.5%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    
     #pretty-bg {
-        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
     }
-}
+    
+    @media (max-width: 840px) {
+        #pretty-bg {
+            display: none;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .title__title {
+            color: #fff;
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+        }
+        @keyframes typing {
+            from {
+                width: 0
+            }
+            to {
+                width: 100%
+            }
+        }
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent
+            }
+            50% {
+                border-color: orange
+            }
+        }
+    }

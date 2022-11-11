@@ -1,0 +1,25 @@
+.page__pp1 {}
+
+.container {}
+
+.pp1__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 135px;
+}
+
+.saits__pp1 {
+    border: 1px solid #fff;
+}
+
+@media (max-width: 1166px) {
+    .pp1__body {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .saits__pp1 {
+        width: 100%;
+    }
+}

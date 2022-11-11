@@ -74,30 +74,3 @@
 .liquid-button {
     z-index: 1000;
 }
-
-
-/* .header__item:hover {
-    text-decoration: underline;
-} */
-
-.header__buttom {}
-
-.header__buttons {
-    font-family: 'Inter';
-    transition: all 0.9s;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    border: 1px solid transparent;
-    color: #FFFFFF;
-    padding: 12px 34px 15px 34px;
-    background: linear-gradient(0deg, #DA4F6E, #DA4F6E), linear-gradient(0deg, #EFCB0A, #EFCB0A), linear-gradient(0deg, rgba(212, 132, 68, 0.5), rgba(212, 132, 68, 0.5)), rgba(232, 84, 117, 0.1);
-    border-radius: 50px;
-    cursor: pointer;
-}
-
-.header__buttons:hover {
-    background: #00121C;
-    border: 1px solid #DA4F6E;
-}

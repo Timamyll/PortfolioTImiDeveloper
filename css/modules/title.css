@@ -13,6 +13,7 @@
 }
 
 .title__title {
+    z-index: 1000;
     font-family: 'Lobster';
     font-style: normal;
     font-weight: 400;
@@ -27,6 +28,7 @@
 }
 
 .title__text {
+    z-index: 1000;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
