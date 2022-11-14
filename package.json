@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "swup": "^2.0.19"
+  },
+  "devDependencies": {
+    "pug": "^3.0.2"
   }
 }

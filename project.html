@@ -6,94 +6,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TimiDeveloper</title>
-    <link rel="stylesheet" href="./css/modules/main.css">
-    <link rel="stylesheet" href="./css/modules/hamberger.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/preloader.css">
     <link rel="stylesheet" href="./css/project.css">
 </head>
 
 <body>
+    <div class="preloader">
+
+        <!-- Добавляем готовую структуру Preloader -->
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+    </div>
     <header class="page__header">
         <div class="container">
-            <div class="header__body">
-                <div class="header__logo">
-                    <!-- <img class="logo__imgs" src="./images/header/logo.svg" alt="logo"> -->
-                    <div class="globe-container">
-                        <div class="globe">
-                            <div class="globe-sphere"></div>
-                            <div class="globe-outer-shadow"></div>
-                            <div class="globe-worldmap">
-                                <div class="globe-worldmap-back"></div>
-                                <div class="globe-worldmap-front"></div>
+            <div class="header__body ">
+                <div class="header__logo ">
+                    <!-- <img class="logo__imgs " src="./images/header/logo.svg " alt="logo "> -->
+                    <div class="globe-container ">
+                        <div class="globe ">
+                            <div class="globe-sphere "></div>
+                            <div class="globe-outer-shadow "></div>
+                            <div class="globe-worldmap ">
+                                <div class="globe-worldmap-back "></div>
+                                <div class="globe-worldmap-front "></div>
                             </div>
-                            <div class="globe-inner-shadow"></div>
+                            <div class="globe-inner-shadow "></div>
                         </div>
                     </div>
                 </div>
-                <div class="header__menu">
-                    <nav class="header__menus">
-                        <ul class="menu__nav">
-                            <li class="menu__link"><a class="header__item" href="">Projects</a></li>
-                            <li class="menu__link"><a class="header__item" href="">Hobby</a></li>
-                            <li class="menu__link"><a class="header__item" href="">My knowledge</a></li>
-                            <li class="menu__link"><a class="header__item" href="">How did you study?</a></li>
+                <div class="header__menu ">
+                    <nav class="header__menus ">
+                        <ul class="menu__nav ">
+                            <li class="menu__link "><a class="header__item " href="./index.html ">Home</a></li>
+                            <li class="menu__link "><a class="header__item " href="./project.html ">Projects</a></li>
+                            <li class="menu__link "><a class="header__item " href="./knowledge.html ">My knowledge</a></li>
+                            <li class="menu__link "><a class="header__item " href="./study.html ">How did you study?</a></li>
                         </ul>
                     </nav>
                 </div>
-                <svg class="liquid-button" data-text="Contact" data-force-factor="0.1" data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4" data-layer-1-mouse-force="400" data-layer-2-mouse-force="500" data-layer-1-force-limit="1" data-layer-2-force-limit="2" data-color1="#FFF500"
-                    data-color2="#20D8F9" data-color3="#20D8F9">
-                  </svg>
+                <a class="liquid-button" href="./index.html"><svg class="liquid-button " data-text="Contact " data-force-factor="0.1 " data-layer-1-viscosity="0.5 " data-layer-2-viscosity="0.4 " data-layer-1-mouse-force="400 " data-layer-2-mouse-force="500 " data-layer-1-force-limit="1
+            " data-layer-2-force-limit="2 " data-color1="#FFF500 " data-color2="#20D8F9 " data-color3="#20D8F9 ">
+                  </svg></a>
             </div>
         </div>
     </header>
 
-    <section class="page__project">
-        <div class="container">
-            <div class="project__body">
-                <h1 class="project__title">Projects</h1>
-                <p class="project__text">And hello again. These are my projects that I am very proud of. To see how they will be in your browser, just click. And then you can immerse yourself in the world of my layout. The sites are fully adaptive. They also have sliders and
+    <section class="page__project ">
+        <div class="container ">
+            <div class="project__body ">
+                <h1 class="project__title ">Projects</h1>
+                <p class="project__text ">And hello again. These are my projects that I am very proud of. To see how they will be in your browser, just click. And then you can immerse yourself in the world of my layout. The sites are fully adaptive. They also have sliders and
                     scripts. Enjoy watching, I'm sure you'll like it.</p>
             </div>
         </div>
     </section>
 
-    <div class="hamburger"><span></span><span></span><span></span></div>
+    <div class="hamburger "><span></span><span></span><span></span></div>
 
     <div class="menu__overlay ">
-        <div class="menu__phone animate__animated">
-            <ul class="menu__nav">
-                <li class="menu__link"><a class="header__item" href="">Projects</a></li>
-                <li class="menu__link"><a class="header__item" href="">Hobby</a></li>
-                <li class="menu__link"><a class="header__item" href="">My knowledge</a></li>
-                <li class="menu__link"><a class="header__item" href="">How did you study?</a></li>
+        <div class="menu__phone animate__animated ">
+            <ul class="menu__nav ">
+                <li class="menu__link "><a class="header__item " href="./index.html ">Home</a></li>
+                <li class="menu__link "><a class="header__item " href="./project.html ">Projects</a></li>
+                <li class="menu__link "><a class="header__item " href="./knowledge.html ">My knowledge</a></li>
+                <li class="menu__link "><a class="header__item " href="./study.html ">How did you study?</a></li>
             </ul>
         </div>
     </div>
-    <section class="page__pp1">
-        <div class="container">
-            <div class="pp1__body">
-                <iframe class="saits__pp1" src="https://timamyll.github.io/Anow/" height="337px" width="554px" frameborder="0"></iframe>
-                <iframe class="saits__pp1" src="https://timamyll.github.io/spaceX/" height="337px" width="554px" frameborder="0"></iframe>
-                <iframe class="saits__pp1" src="https://timamyll.github.io/himo-xiaomi/" height="337px" width="554px" frameborder="0"></iframe>
-                <iframe class="saits__pp1" src="https://timamyll.github.io/Richachd/" height="337px" width="554px" frameborder="0"></iframe>
-                <iframe class="saits__pp1" src="https://timamyll.github.io/LaslesVPN/" height="337px" width="554px" frameborder="0"></iframe>
-                <iframe class="saits__pp1" src="https://timamyll.github.io/Outdoor/" height="337px" width="554px" frameborder="0"></iframe>
-                <iframe class="saits__pp1" src="https://timamyll.github.io/Safari/" height="337px" width="554px" frameborder="0"></iframe>
-                <iframe class="saits__pp1" src="https://timamyll.github.io/JS-Game/" height="337px" width="554px" frameborder="0"></iframe>
-                <iframe class="saits__pp1" src="https://timamyll.github.io/Car-cart/" height="337px" width="554px" frameborder="0"></iframe>
+    <section class="page__pp1 ">
+        <div class="container ">
+            <div class="pp1__body ">
+                <iframe class="saits__pp1 " src="https://timamyll.github.io/Anow/ " height="337px " width="554px " frameborder="0 "></iframe>
+                <iframe class="saits__pp1 " src="https://timamyll.github.io/spaceX/ " height="337px " width="554px " frameborder="0 "></iframe>
+                <iframe class="saits__pp1 " src="https://timamyll.github.io/himo-xiaomi/ " height="337px " width="554px " frameborder="0 "></iframe>
+                <iframe class="saits__pp1 " src="https://timamyll.github.io/Richachd/ " height="337px " width="554px " frameborder="0 "></iframe>
+                <iframe class="saits__pp1 " src="https://timamyll.github.io/LaslesVPN/ " height="337px " width="554px " frameborder="0 "></iframe>
+                <iframe class="saits__pp1 " src="https://timamyll.github.io/Outdoor/ " height="337px " width="554px " frameborder="0 "></iframe>
+                <iframe class="saits__pp1 " src="https://timamyll.github.io/Safari/ " height="337px " width="554px " frameborder="0 "></iframe>
+                <iframe class="saits__pp1 " src="https://timamyll.github.io/JS-Game/ " height="337px " width="554px " frameborder="0 "></iframe>
+                <iframe class="saits__pp1 " src="https://timamyll.github.io/Car-cart/ " height="337px " width="554px " frameborder="0 "></iframe>
 
 
 
             </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__img"></div>
+    <footer class="footer ">
+        <div class="container ">
+            <div class="footer__img "></div>
         </div>
     </footer>
-
-    <script src="./js/button.js"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/preloader.js"></script>
+    <script src="./js/button.js "></script>
+    <script src="./js/scripts.js "></script>
 </body>
 
 </html>

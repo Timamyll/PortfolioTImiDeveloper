@@ -31,6 +31,7 @@ h6 {
 html {
     font-family: 'Bebas Neue', cursive;
     background-color: #00121C;
+    scroll-behavior: smooth;
 }
 
 .container {

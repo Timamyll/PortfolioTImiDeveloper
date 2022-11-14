@@ -1,7 +1,10 @@
+@import url(./modules/header.css);
+@import url(./modules/main.css);
 @import url(./modulesProject/projecttitle.css);
 @import url(./modules/hamberger.css);
 @import url(./modulesProject/pp.css);
 @import url(./modules/footer.css);
+@import url(./style.css);
 .liquid-button {
     z-index: 1000;
 }

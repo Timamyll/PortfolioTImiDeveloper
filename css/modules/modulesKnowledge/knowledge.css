@@ -1,0 +1,79 @@
+.page__knowledge {}
+
+.container {}
+
+.knowledge__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.knowledge__box {
+    width: 551px;
+    height: 264px;
+    border: 1px solid #BABABA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    padding: 10px 10px 10px 10px;
+}
+
+.knowledge__img {}
+
+.knowledge__imgs {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.knowledge__item {}
+
+.knowledge__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.knowledge__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    max-width: 383px;
+}
+
+@media (max-width: 1149px) {
+    .knowledge__body {
+        grid-template-columns: 1fr;
+    }
+    .knowledge__box {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1149px) {
+    .project__title {
+        font-size: 40px;
+    }
+    .knowledge__title {
+        font-size: 20px;
+    }
+    .knowledge__text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 449px) {
+    .project__title {
+        font-size: 20px;
+    }
+}

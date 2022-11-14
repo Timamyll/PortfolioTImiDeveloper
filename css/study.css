@@ -1,0 +1,142 @@
+@import url(./modules/header.css);
+@import url(./modules/hamberger.css);
+@import url(./style.css);
+@import url(./modulesProject/projecttitle.css);
+.accordion {
+    margin: auto;
+    width: 100%;
+}
+
+.accordion input {
+    display: none;
+}
+
+.box {
+    position: relative;
+    background: rgba(159, 157, 157, 0.886);
+    border: 1px solid rgba(108, 108, 108, 0.886);
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    height: 64px;
+    transition: all .15s ease-in-out;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    box-shadow: 0 -1px 0 rgba(108, 108, 108, 0.886), 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+.box-title {
+    width: calc(100% - 40px);
+    height: 70px;
+    line-height: 64px;
+    padding: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.box-content {
+    width: calc(100% - 40px);
+    padding: 30px 20px;
+    font-size: 11pt;
+    color: rgba(0, 0, 0, .54);
+    display: none;
+}
+
+.box-close {
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+input:checked+.box {
+    height: auto;
+    margin: 16px 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+}
+
+input:checked+.box .box-title {
+    border-bottom: 1px solid rgba(0, 0, 0, .18);
+}
+
+input:checked+.box .box-content,
+input:checked+.box .box-close {
+    display: inline-block;
+}
+
+.arrows section .box-title {
+    padding-left: 44px;
+    width: calc(100% - 64px);
+}
+
+.arrows section .box-title:before {
+    position: absolute;
+    display: block;
+    content: '\203a';
+    font-size: 18pt;
+    left: 20px;
+    top: -2px;
+    transition: transform .15s ease-in-out;
+    color: rgba(0, 0, 0, .54);
+}
+
+input:checked+section.box .box-title:before {
+    transform: rotate(90deg);
+}
+
+.book__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.book__text {
+    font-size: 14px;
+    line-height: 100%;
+    margin-bottom: 20px;
+    color: #000;
+    padding-left: 20px;
+}
+
+.book_-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.book__text a {
+    color: #000;
+    padding-left: 20px;
+}
+
+@media (max-width: 450px) {
+    .book__title {
+        font-size: 17px;
+    }
+    .book_-title {
+        font-size: 17px;
+    }
+    .book__text {
+        font-size: 11px;
+        padding-left: 0;
+    }
+    .book__text a {
+        font-size: 11px;
+        padding-left: 0;
+    }
+}

@@ -16,11 +16,25 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/preloader.css">
     <link rel="stylesheet" href="css/slick.css">
 
 </head>
 
 <body>
+
+    <div class="preloader">
+
+        <!-- Добавляем готовую структуру Preloader -->
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+    </div>
     <header class="page__header">
         <div class="container">
             <div class="header__body">
@@ -41,17 +55,18 @@
                 <div class="header__menu">
                     <nav class="header__menus">
                         <ul class="menu__nav">
+                            <li class="menu__link"><a class="header__item" href="./index.html">Home</a></li>
                             <li class="menu__link"><a class="header__item" href="./project.html">Projects</a></li>
-                            <li class="menu__link"><a class="header__item" href="">Hobby</a></li>
-                            <li class="menu__link"><a class="header__item" href="">My knowledge</a></li>
-                            <li class="menu__link"><a class="header__item" href="">How did you study?</a></li>
+                            <li class="menu__link"><a class="header__item" href="./knowledge.html">My knowledge</a></li>
+                            <li class="menu__link"><a class="header__item" href="./study.html">How did you study?</a></li>
                         </ul>
                     </nav>
                 </div>
-                <svg class="liquid-button" data-text="Contact" data-force-factor="0.1" data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4" data-layer-1-mouse-force="400" data-layer-2-mouse-force="500" data-layer-1-force-limit="1" data-layer-2-force-limit="2" data-color1="#FFF500"
-                    data-color2="#20D8F9" data-color3="#20D8F9">
+                <a class="liquid-button" href="#btn">
+                    <svg class="liquid-button" data-text="Contact" data-force-factor="0.1" data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4" data-layer-1-mouse-force="400" data-layer-2-mouse-force="500" data-layer-1-force-limit="1" data-layer-2-force-limit="2" data-color1="#FFF500"
+                        data-color2="#20D8F9" data-color3="#20D8F9">
                   </svg>
-
+                </a>
             </div>
         </div>
     </header>
@@ -62,9 +77,9 @@
                     Hello world? && Hello world!!
                 </h1>
                 <p class="title__text">I am a novice frontend developer. This is my portfolio site. On it I will show my projects and tell you about myself. I am very glad that you are looking at it and I hope that it will only get more interesting.</p>
-                <svg class="liquid-button" data-text="Contact" data-force-factor="0.1" data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4" data-layer-1-mouse-force="400" data-layer-2-mouse-force="500" data-layer-1-force-limit="1" data-layer-2-force-limit="2" data-color1="#FFF500"
+                <a class="liquid-button" href="#btn"><svg class="liquid-button" data-text="Contact" data-force-factor="0.1" data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4" data-layer-1-mouse-force="400" data-layer-2-mouse-force="500" data-layer-1-force-limit="1" data-layer-2-force-limit="2" data-color1="#FFF500"
                     data-color2="#20D8F9" data-color3="#20D8F9">
-                  </svg>
+                  </svg></a>
             </div>
         </div>
     </section>
@@ -96,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section class="page__contact">
+    <section class="page__contact" id='btn'>
         <div class="container">
             <div class="contact__body">
                 <h2 class="contact__title">How to contact me?</h2>
@@ -135,10 +150,10 @@
     <div class="menu__overlay ">
         <div class="menu__phone animate__animated">
             <ul class="menu__nav">
+                <li class="menu__link"><a class="header__item" href="./index.html">Home</a></li>
                 <li class="menu__link"><a class="header__item" href="./project.html">Projects</a></li>
-                <li class="menu__link"><a class="header__item" href="">Hobby</a></li>
-                <li class="menu__link"><a class="header__item" href="">My knowledge</a></li>
-                <li class="menu__link"><a class="header__item" href="">How did you study?</a></li>
+                <li class="menu__link"><a class="header__item" href="./knowledge.html">My knowledge</a></li>
+                <li class="menu__link"><a class="header__item" href="./study.html">How did you study?</a></li>
             </ul>
         </div>
     </div>
@@ -152,6 +167,7 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="./js/button.js"></script>
     <script src="./js/scripts.js"></script>
+    <script src="./js/preloader.js"></script>
     <script src="./js/pretty.js"></script>
     <script src="js/main.js"></script>
 </body>

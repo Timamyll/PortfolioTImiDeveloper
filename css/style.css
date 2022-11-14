@@ -142,11 +142,12 @@
     @media (min-width: 992px) {
         .title__title {
             color: #fff;
+            max-width: fit-content;
             overflow: hidden;
             border-right: .15em solid orange;
             white-space: nowrap;
             margin: 0 auto;
-            animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+            animation: typing 5s steps(30, end), blink-caret .9s step-end infinite;
         }
         @keyframes typing {
             from {
@@ -168,3 +169,12 @@
         }
     }
     
+    .header__item {
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+        transition: all 0.5s;
+    }
