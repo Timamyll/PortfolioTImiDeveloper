@@ -74,3 +74,13 @@
 .liquid-button {
     z-index: 1000;
 }
+
+@media (max-width: 954px) {
+    .liquid-button {
+        z-index: 0;
+    }
+    .header__menu {
+        /* padding-left: 121px; */
+        /* z-index: 10; */
+    }
+}

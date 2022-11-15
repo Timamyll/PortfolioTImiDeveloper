@@ -54,6 +54,12 @@
     .title__text {
         font-size: 18px;
     }
+    .title__title {
+        z-index: 0;
+    }
+    .title__text {
+        z-index: 0;
+    }
 }
 
 @media (max-width: 500px) {
